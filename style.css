@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'poppins', sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(#00b6, #00b6), url(images/angelsima.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.container{
+  width: 50%;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-section{
+  background-color: #fff;
+  width: 100%;
+  padding: 40px 80px;
+  border-radius: 20px;
+}
+.form-header{
+  font-size: 3rem;
+  color: #00b7;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+.form-header::after{
+  content:"";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 8px;
+  background-color: #00b7;
+  border-radius: 20px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+.form-group{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+}
+.form i{
+  margin: 0 30px;
+}
+.form input{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.btns-flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.btns-flex button{
+  background-color: #00b7;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 15px 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background .5s;
+}
+.btns-flex .disable{
+  background-color: #f1f1f1;
+  color: #777;
+}
+.lost-pass{
+  width: 100%;
+  text-align: center;
+}
+.lost-pass a{
+  color: #00b9;
+  cursor: pointer;
+}
+
+/*FOOTER*/
+.attribution{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.attribution p{
+  font-size: 1rem;
+  color: #000;
+}
+.attribution a{
+  color: #00b7;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/*Media Queries*/
+@media(max-width: 1000px){
+  .container{
+    width: 90%;
+  }
+  .form-section{
+    padding: 30px;
+  }
+  .btns-flex{
+    width: 100%;
+  }
+  .btns-flex button{
+    padding: 15px 30px;
+  }
+  .attribution{
+    width: 100%;
+  }
+}
